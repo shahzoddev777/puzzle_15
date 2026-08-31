@@ -15,6 +15,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 public class HomeActivity extends AppCompatActivity {
     AppCompatButton contino;
+    AppCompatButton btnexit;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,10 +40,12 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
         contino = findViewById(R.id.continio);
+        btnexit = findViewById(R.id.btn_exit);
         contino.setOnClickListener(view -> {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
         });
+        btnexit.setOnClickListener(view -> finish());
     }
 
     @Override

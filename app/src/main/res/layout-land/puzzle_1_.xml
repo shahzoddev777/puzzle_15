@@ -13,10 +13,10 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:background="@drawable/btn_back"
+        android:contentDescription="Back"
         android:padding="10dp"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_back"
-        android:contentDescription="Back" />
+        android:src="@drawable/ic_back" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal"
         android:paddingStart="12dp"
-        android:paddingTop="6dp"
+        android:paddingTop="12dp"
         android:paddingEnd="16dp"
         android:paddingBottom="6dp">
 
@@ -36,8 +36,8 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginEnd="10dp"
-            android:src="@drawable/ic_trophy"
-            android:contentDescription="Trophy" />
+            android:contentDescription="Trophy"
+            android:src="@drawable/ic_trophy" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-medium"
+                android:fontFamily="@font/Youre"
                 android:text="Score"
                 android:textColor="#FFFFFF"
                 android:textSize="12sp" />
@@ -56,7 +56,7 @@
                 android:id="@+id/counttxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="sans-serif-black"
+                android:fontFamily="@font/Youre"
                 android:text="0"
                 android:textColor="@color/white"
                 android:textSize="20sp"
@@ -65,7 +65,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- Markaziy 4x4 O'yin Panjarasi (Grid) -->
     <RelativeLayout
         android:id="@+id/relativeLayout"
         android:layout_width="396dp"
@@ -216,12 +215,12 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_gravity="bottom|start"
+        android:layout_marginStart="24dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/btn_back"
+        android:contentDescription="Restart"
         android:padding="12dp"
-        android:layout_marginStart="24dp"
         android:scaleType="centerInside"
-        android:src="@drawable/ic_restart"
-        android:contentDescription="Restart" />
+        android:src="@drawable/ic_restart" />
 
 </FrameLayout>

@@ -8,12 +8,13 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class InfoActivity extends AppCompatActivity {
-    Button btnBack2;
+    AppCompatImageButton btnBack2;
     ImageButton instaBtn;
     ImageButton githubBtn;
     ImageButton telegramBtn;
@@ -32,7 +33,10 @@ public class InfoActivity extends AppCompatActivity {
         btnBack2 = findViewById(R.id.orqaga);
         githubBtn = findViewById(R.id.btn_github);
         telegramBtn = findViewById(R.id.btn_telegram);
-        btnBack2.setOnClickListener(view -> finish());
+        btnBack2.setOnClickListener(view -> {
+            Intent intent = new Intent(this, HomeActivity.class);
+            startActivity(intent);
+        });
         githubBtn.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/shahzoddev777"));
             startActivity(intent);

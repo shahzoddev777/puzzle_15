@@ -5,54 +5,69 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_clean_gradient">
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/infon"
-        android:layout_width="80dp"
-        android:layout_height="44dp"
-        android:layout_gravity="top|start"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/btn_back"
-        android:elevation="4dp"
-        android:stateListAnimator="@null"
-        android:text="Info"
-        android:textAllCaps="false"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puzzle 15"
+        android:fontFamily="@font/ROGONEZ"
         android:textColor="@color/white"
-        android:textSize="14sp" />
-
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal|start|center_vertical"
+        android:layout_marginStart="35dp" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:paddingStart="150dp"
         android:paddingHorizontal="24dp">
 
         <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/sozlar"
-            android:layout_width="250dp"
+            android:layout_width="200dp"
             android:layout_height="50dp"
             android:layout_marginBottom="24dp"
             android:background="@drawable/edit_text_back"
             android:elevation="2dp"
+            android:fontFamily="@font/Youre"
             android:hint="Person information"
             android:inputType="text"
             android:maxLines="1"
             android:paddingHorizontal="16dp"
             android:textColor="#FFFFFF"
             android:textColorHint="#94A3B8"
-            android:textSize="14sp" />
+            android:textSize="10sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/startbtn"
             android:layout_width="200dp"
             android:layout_height="60dp"
+            android:fontFamily="@font/Youre"
             android:layout_marginBottom="16dp"
             android:background="@drawable/btn_back"
             android:elevation="6dp"
             android:letterSpacing="0.05"
             android:stateListAnimator="@null"
             android:text="Start"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/infon"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/Youre"
+            android:background="@drawable/btn_back"
+            android:elevation="6dp"
+            android:letterSpacing="0.05"
+            android:stateListAnimator="@null"
+            android:text="Info"
             android:textAllCaps="false"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
@@ -66,12 +81,29 @@
             android:elevation="6dp"
             android:letterSpacing="0.05"
             android:stateListAnimator="@null"
+            android:fontFamily="@font/Youre"
             android:text="Continue"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold" />
 
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/infon"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/btn_back"
+            android:elevation="6dp"
+            android:letterSpacing="0.05"
+            android:fontFamily="@font/Youre"
+            android:stateListAnimator="@null"
+            android:text="Exit"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </FrameLayout>

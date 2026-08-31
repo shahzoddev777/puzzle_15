@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-black"
+            android:fontFamily="@font/Youre"
             android:text="YOU WIN!"
             android:textColor="#FFFFFF"
             android:textSize="38sp"
@@ -32,8 +32,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
-            android:fontFamily="sans-serif-medium"
             android:text="Score: 0"
+            android:fontFamily="@font/Youre"
             android:textColor="#E0E0E0"
             android:textSize="22sp" />
 
@@ -84,6 +84,7 @@
             android:background="@drawable/btn_back"
             android:text="Home"
             android:textAllCaps="true"
+            android:fontFamily="@font/Youre"
             android:textColor="@color/white"
             android:textSize="18sp"
             android:textStyle="bold" />
