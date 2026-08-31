@@ -9,7 +9,7 @@
         <item name="android:textSize">35sp</item>
         <item name="android:gravity">center</item>
         <item name="android:textStyle">bold</item>
-        <item name="fontFamily">@font/Youre</item>
+        <item name="fontFamily">@font/youre</item>
         <item name="android:textColor">@color/white</item>
     </style>
 </resources>
