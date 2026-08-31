@@ -71,8 +71,8 @@
 
     <RelativeLayout
         android:id="@+id/relativeLayout"
-        android:layout_width="396dp"
-        android:layout_height="396dp"
+        android:layout_width="340dp"
+        android:layout_height="340dp"
         android:background="@drawable/btn_back"
         android:layout_gravity="center"
         android:padding="2dp"

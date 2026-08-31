@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -19,7 +18,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_page);
+        setContentView(R.layout.activity_home);
         EditText nameInput = findViewById(R.id.sozlar);
         Button button = findViewById(R.id.startbtn);
         button.setOnClickListener(v -> {
@@ -45,7 +44,7 @@ public class HomeActivity extends AppCompatActivity {
             Intent intent = new Intent(this, GameActivity.class);
             startActivity(intent);
         });
-        btnexit.setOnClickListener(view -> finish());
+        btnexit.setOnClickListener(view -> finishAffinity());
     }
 
     @Override

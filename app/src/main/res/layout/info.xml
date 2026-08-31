@@ -56,8 +56,8 @@
             android:id="@+id/btn_instagram"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="100dp"
-            android:backgroundTint="#1E1B4B"
+            android:layout_marginStart="90dp"
+            android:backgroundTint="#15FFFFFF"
             android:src="@drawable/ic_instagram" />
 
         <androidx.appcompat.widget.AppCompatImageButton

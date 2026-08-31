@@ -36,6 +36,7 @@ public class InfoActivity extends AppCompatActivity {
         btnBack2.setOnClickListener(view -> {
             Intent intent = new Intent(this, HomeActivity.class);
             startActivity(intent);
+            finish();
         });
         githubBtn.setOnClickListener(view -> {
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/shahzoddev777"));

@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -44,7 +43,7 @@ public class GameActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.puzzle_1_);
+        setContentView(R.layout.activity_game);
 
         name = getIntent().getStringExtra("uernameMain");
         if (name == null || name.isEmpty()) {
@@ -194,7 +193,6 @@ public class GameActivity extends AppCompatActivity {
                     int movedValue = Integer.parseInt(views[amount].getText().toString());
 
                     if (movedValue == lastMovedValue && amount == previousEmptyIndex) {
-                        count--;
                         lastMovedValue = -1;
                         previousEmptyIndex = -1;
                     } else {
