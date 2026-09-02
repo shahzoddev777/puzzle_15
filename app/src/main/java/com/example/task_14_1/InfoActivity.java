@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,9 +16,9 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class InfoActivity extends AppCompatActivity {
     AppCompatImageButton btnBack2;
-    ImageButton instaBtn;
-    ImageButton githubBtn;
-    ImageButton telegramBtn;
+    ImageView instaBtn;
+    ImageView githubBtn;
+    ImageView telegramBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,6 +3,8 @@ package com.example.task_14_1;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +14,9 @@ import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -67,7 +71,28 @@ public class GameActivity extends AppCompatActivity {
         clickUIViews();
         loadMatrix();
         btnBack.setOnClickListener(view -> finish());
-        btnRestart.setOnClickListener(view -> {
+        btnRestart.setOnClickListener(view -> showRestartDialog());
+    }
+
+    private void showRestartDialog() {
+        View view = getLayoutInflater().inflate(R.layout.dialog_custom, null);
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setView(view)
+                .create();
+
+        if (dialog.getWindow() != null) {
+            dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        }
+
+        TextView message = view.findViewById(R.id.dialog_message);
+        message.setText("O'yinni qaytadan boshlashni xohlaysizmi?");
+
+        AppCompatButton btnNo = view.findViewById(R.id.btn_no);
+        AppCompatButton btnYes = view.findViewById(R.id.btn_yes);
+
+        btnNo.setOnClickListener(v -> dialog.dismiss());
+        btnYes.setOnClickListener(v -> {
+            dialog.dismiss();
             count = 0;
             textCount.setText("0");
             lastMovedValue = -1;
@@ -75,6 +100,8 @@ public class GameActivity extends AppCompatActivity {
             loadMatrix();
             Toast.makeText(GameActivity.this, "Restart berildi!", Toast.LENGTH_SHORT).show();
         });
+
+        dialog.show();
     }
 
     @Override
