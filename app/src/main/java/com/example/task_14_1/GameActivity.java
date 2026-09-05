@@ -252,7 +252,7 @@ public class GameActivity extends AppCompatActivity {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 1; i <= 16; i++) list.add(i);
         do {
-             Collections.shuffle(list);
+            Collections.shuffle(list);
             for (int i = 0; i < 4; i++) {
                 for (int j = 0; j < 4; j++) {
                     matrix[i][j] = list.get(4 * i + j);
@@ -296,7 +296,8 @@ public class GameActivity extends AppCompatActivity {
     private boolean isFinish() {
         if (!(x == 3 && y == 3)) return false;
         for (int i = 0; i < 15; i++) {
-            if (views[i] == null || !views[i].getText().toString().equals(String.valueOf(i + 1))) return false;
+            if (views[i] == null || !views[i].getText().toString().equals(String.valueOf(i + 1)))
+                return false;
         }
         return true;
     }
